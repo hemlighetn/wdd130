@@ -1,0 +1,21 @@
+img {
+    width: 80%;
+    margin: 0 10%;
+}
+.circle {
+    width: 20%;
+    border-radius: 50%;
+    border: 10px solid #43464b;
+    margin: 0 auto;
+    /*text-align: center;  */
+}
+main { 
+    text-align: center;
+}
+#display {
+    display: flex;
+    justify-content: center;    
+    background-color: gray;
+    margin: -5px 10%;
+    padding: 4%;
+}

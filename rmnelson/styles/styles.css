@@ -1,0 +1,57 @@
+body {
+    background-color: #46a2df;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#header {
+    font-family: Arial, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    color: white;
+}
+#header:hover {
+    color: black;
+}
+#quote1 {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#attribution {
+    color: white;
+    width: 50%;
+    margin:30px auto;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+#fpog li {
+    color: black;
+    width: 50%;
+    margin:20px auto;    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+img {
+    width: 30%;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#quote2 {
+    width: 40%;
+    margin: 20px auto;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
+footer p {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
