@@ -34,8 +34,12 @@ nav a:hover {
     background-color: #ea7317;
     color: #a1db43;
 }
+#hero-msg {
+    background-color: #aef4ff;
+    min-height: 200px;
+}
 #hero-msg h1, #hero-msg h4 {
-    text-align: center;
+    text-align: center;    
 }
 .msg {
     background-color: #fffff7;
@@ -97,9 +101,9 @@ main section img {
     margin-top: 50px;
     border-radius: 5px;
 }
-.book {
+/*.book {
     background-color: #aef4ff;
-}
+}*/
 .book:hover, .join:hover {
     background-color: #fffff7;
     color: black;
