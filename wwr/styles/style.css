@@ -97,6 +97,9 @@ main section img {
     margin-top: 50px;
     border-radius: 5px;
 }
+.book {
+    background-color: #aef4ff;
+}
 .book:hover, .join:hover {
     background-color: #fffff7;
     color: black;
