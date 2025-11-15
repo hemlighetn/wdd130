@@ -94,18 +94,16 @@ h1, h2 {
 .button-box {
     text-align: center;
 }
-main {
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    color: #ea7317;
 }
 main section {
     text-align: center;
 }
 main section img {
     box-sizing: border-box;
-}
-.home-grid {
-    color: #ea7317;
 }
 .icon {
     padding-top: 10px;
@@ -194,6 +192,28 @@ footer .social img {
 }
 .icon {
     width: 80px;
+}
+
+/* blog page styles */
+
+.blog-grid {    
+    width: 50%;     
+    margin: 50px auto;
+}
+figcaption { 
+    padding: 10px;
+    font-family: "Permanent Marker";
+    color: #ea7317;   
+}
+.blog {    
+    color: #6f7364;  
+    padding: 20px;   
+}
+.post {            
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.blog-img {
+    padding: 0 0 40px 0;
 }
 
 @media screen and (max-width: 900px) {
