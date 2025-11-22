@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/cclogo.png" alt="carmen cox logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="contactme.html">Contact Me</a>                
+            </nav>
+        </header> 
+        <div id="hero">
+            <div id="hero-box">
+            <img id="hero-img" src="images/rsz_desklargecrop.jpg" alt="black and white workdesk">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Reach Out!</h1>
+                <h3>Go ahead and drop me a line...</h3>                
+            </section>
+        </div>  
+        <main class="home-grid-about">
+             <div class="wrapper">                
+                <article>
+                    <p>One of the most wonderful things technology does is to enable creators to connect with audiences--and don't we all play each of those roles at one time or another? My goal is to write the stories I would want to read and that will resonate and uplift others. Please let me know if I've hit that mark! I would love to hear your responses to my books and anything else you want to share with me. I count joining a writing group as among the smartest moves I've ever made, so let's try to make something similar right here...a community of writers and readers who want to create and celebrate all that is good and uplifting in the infinite world of story.</p>
+                </article> 
+                <img src="images/carmentypingface.JPG" alt="photo of carmen cox">                         
+            </div>  
+            <div id="feedback">        
+                <form action="/my-handling-form-page" method="post">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </p>
+                    <p>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </p>
+                    <p>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </p>
+                    <p class="button">
+                        <button type="submit">Send your message</button>
+                    </p>
+                </form>          
+            </div>            
+        </main> 
+        <footer>
+            <p>carmencox.com &copy; 2025 - Carmen Cox</p>              
+            <p><a href="home.html">Home</a></p> 
+            <img class="logo" src="images/cclogo.png" alt="carmen cox logo">
+            <p><a href="aboutme.html">About Me</a></p> 
+            <p><a href="site-plan.html">Site Plan</a></p>          
+        </footer>
+    </div>
+<script>
+// get the feedback div element so we can do something with it.
+const feedbackElement = document.getElementById('feedback');
+// get the form so we can read what was entered in it.
+const formElement = document.forms[0];
+// add a 'listener' to wait for a submission of our form. When that happens run the code below.
+formElement.addEventListener('submit', function(e) {
+    // stop the form from doing the default action.
+    e.preventDefault();
+    // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message! I will get back to you as soon as I can.';
+    // make the feedback element visible.
+    feedbackElement.style.display = "block";
+    // add a class to move everything down so our message doesn't cover it.
+    document.body.classList.toggle('moveDown');
+});
+</script>
+</body>
+</html>
+
