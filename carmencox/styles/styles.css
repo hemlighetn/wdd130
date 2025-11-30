@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+
+body {
+    background-color: #ebebea;
+    font-family: "Raleway",Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header {
+    background-color: #293d29;
+    display: grid;
+    grid-template-columns: 1fr 3fr;    
+}
+nav {
+    display: flex;
+    justify-content: space-around;    
+}
+nav a {
+    font-family: "Special Elite", serif;    
+    text-align: center;
+    color: #ebebea;
+    text-decoration: none;
+    padding: 35px;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+#hero-box {
+    grid-column: 1/7;
+    grid-row: 1/7;
+    z-index: -1;
+}
+#hero-img {
+    width: 100%;
+}
+#hero-msg {  
+    font-family: "Special Elite", serif;  
+    min-height: 200px;
+    max-width: 80%;
+    max-height: 90%;
+    margin-top: 20px;
+    margin-left: 100px;
+    grid-column: 2/3;
+    grid-row: 4/6;
+    text-align: center;     
+}
+footer {
+    font-family: "Special Elite", serif;
+}    
+
