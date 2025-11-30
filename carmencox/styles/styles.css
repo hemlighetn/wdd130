@@ -13,6 +13,7 @@ body {
 }
 header {
     background-color: #293d29;
+    max-height: 100px;
     display: grid;
     grid-template-columns: 1fr 3fr;    
 }
@@ -26,6 +27,13 @@ nav a {
     color: #ebebea;
     text-decoration: none;
     padding: 35px;
+}
+#logo_link {    
+    justify-self: left;
+    align-self: center;
+}
+.logo {
+    max-height: 100px;    
 }
 #hero {
     display: grid;
@@ -53,5 +61,14 @@ nav a {
 }
 footer {
     font-family: "Special Elite", serif;
-}    
+    max-height: 100px;
+    background-color: #293d29;
+    color: #ebebea;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+}   
+footer a {
+    color: #ebebea;
+    text-decoration: none;
+} 
 
