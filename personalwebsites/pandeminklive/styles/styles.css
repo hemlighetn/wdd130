@@ -8,42 +8,56 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
-    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
-    display: flex;
-    flex-direction: column; /* Stacks children vertically */
-    /* Remove default body margins 
-    margin: 0; padding: 0; */
-    justify-content: flex-end; 
-    overflow: hidden; 
+    height: 100vh; 
+    width: 100vw;/* Ensures the body takes at least the full viewport height */
+    display: flex;    
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
 }
 .home-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);    
 }
 img {
-    grid-column: 1/4;
+    grid-column: 1/2;
     grid-row: 1/6;
     width: 100%;
+    height: auto;
+    vertical-align: center;
 }
 #message {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin: 10% 0 0 0;
-    text-align: center;    
-    font-size: 7.0em;      
+    grid-column: 1/2;
+    grid-row: 3/4;    
+    text-align: center; 
+    margin: -1vh auto;
+    padding: 6vh 0;
+    font-size: 7.0em;       
     color: rgb(255, 255, 247, 0.1);    
     text-shadow:
         0 -1px 1px rgba(255, 255, 255, 0.3), /* Top-left light highlight */
         0 3px 4px rgba(0, 0, 0, 0.2);        /* Bottom-right dark shadow */
 }
 
-/*@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-}     */
-    
+@media screen and (max-width: 900px) {
+body, .home-grid {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+} 
+#message {
+    font-size: 4em;
+    margin: -30vh; 
+}   
+} 
+
     
